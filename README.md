@@ -33,26 +33,6 @@ original geometry and client clickboxes, with tube men drawn alongside.
 
 The project has been visually tested in the live game. It is working on Vanilla, 117 HD, and GPU plugin. Plugin Hub approval is pending.
 
-## Run locally
-
-1. Extract this project. Install [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-   and an [Eclipse Temurin Java 11 JDK](https://adoptium.net/temurin/releases/?version=11).
-2. In IntelliJ choose **Open**, select this folder and import the Gradle project.
-   Set the project and Gradle JVM to Java 11.
-3. In the Gradle panel run **Tasks → verification → test**, then the **run** task.
-   In a terminal, use `./gradlew test` followed by `./gradlew run`.
-   Windows PowerShell: `./gradlew.bat test` then `./gradlew.bat run`.
-4. In the development client, enable **Wacky Sire** and visit a Sire chamber.
-   The plugin also handles being enabled while the chamber is already loaded.
-
-Jagex account users should follow RuneLite's official
-[development-client login guide](https://github.com/runelite/runelite/wiki/Using-Jagex-Accounts)
-if the development client cannot log in normally.
-
-The project defaults to `latest.release`, as recommended by the Plugin Hub.
-For the version initially compiled against, use
-`./gradlew test -PruneLiteVersion=1.13.1`.
-
 
 ## Code map
 
