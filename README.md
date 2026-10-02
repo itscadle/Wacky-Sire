@@ -4,7 +4,7 @@ A RuneLite plugin that replaces Abyssal Sire’s tentacle visuals with colorful 
 
 ![Offline preview of the procedural mesh, not an in-game screenshot](docs/preview.gif)
 
-## Features
+## Wacky Sire Features
 
 - Original low-poly 3D mesh: hollow tube, two flailing arms, face, fabric streamers, blower base.
 - Six colors selected deterministically by the tentacle's location.
