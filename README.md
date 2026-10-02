@@ -56,47 +56,6 @@ The project defaults to `latest.release`, as recommended by the Plugin Hub.
 For the version initially compiled against, use
 `./gradlew test -PruneLiteVersion=1.13.1`.
 
-## Before submission
-
-Complete and record [docs/IN_GAME_CHECKS.md](docs/IN_GAME_CHECKS.md). In particular,
-check triangle model 823 in the real cache, the actual tentacle placement,
-occlusion, click-through behavior and renderer compatibility.
-
-Source compilation and automated tests cover Java/API compatibility, mesh
-topology, cache array isolation, NPC scope and lifecycle. These do not validate
-native rendering, cache model shape, menus or reviewer acceptance.
-Recorded build/test results are in [docs/VALIDATION.md](docs/VALIDATION.md).
-
-If a model fails, inspect the development client's log for **Wacky Sire model
-creation failed**. The plugin restores original visuals and stops trying until
-it is re-enabled. A pending cache download is retried automatically.
-
-## Submit to the Plugin Hub
-
-1. Create a **public** GitHub repository, e.g. `wacky-sire`, and upload this
-   project's files with `build.gradle` at the repository root. Exclude generated
-   `build/` and `.gradle/` directories. The root BSD 2-Clause license and
-   `runelite-plugin.properties` are included. Edit `author` if desired.
-2. Push a commit after in-game checks pass. Copy its full 40-character SHA.
-3. Fork [runelite/plugin-hub](https://github.com/runelite/plugin-hub), create a
-   branch and add one plain file named `plugins/wacky-sire`:
-
-   ```properties
-   repository=https://github.com/YOUR_USERNAME/wacky-sire.git
-   commit=YOUR_FULL_40_CHARACTER_COMMIT_SHA
-   ```
-
-   Replace both values with the actual repository and commit. Do not submit
-   placeholders. Plugin Hub builds from that exact public Git commit.
-4. Open a pull request describing the cosmetic behavior and explicitly
-   disclosing the removed client clickboxes and native animation replacement.
-   A suggested description is in [docs/SUBMISSION.md](docs/SUBMISSION.md).
-5. Check the Hub CI and respond to review. Every code change needs a new
-   `commit=` SHA in the manifest.
-
-The project uses `build=standard` and only RuneLite's existing runtime
-dependencies. The Hub replaces local Gradle build files for this build type.
-The Gradle wrapper is from RuneLite's official example plugin.
 
 ## Code map
 
