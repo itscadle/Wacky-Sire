@@ -1,6 +1,6 @@
 # Wacky Sire
 
-A RuneLite Plugin Hub **submission candidate** that replaces Abyssal Sire's
+A RuneLite Plugin Hub **A Runelite Plugin** that replaces Abyssal Sire's
 tentacle visuals with colorful wacky waving inflatable flailing arm tube men.
 
 ![Offline preview of the procedural mesh, not an in-game screenshot](docs/preview.gif)
@@ -32,9 +32,7 @@ The original tentacle attack/sleep/stun animations are also replaced with a
 constant flail. Enabling **Keep original tentacles visible** preserves the
 original geometry and client clickboxes, with tube men drawn alongside.
 
-This behavior must be disclosed to RuneLite reviewers. Approval is not assured.
-The project has not yet been visually tested in the live game. Do not describe
-it as approved or claim GPU/117 HD compatibility before completing the checks below.
+The project has been visually tested in the live game. It is working on Vanilla, HD117, and GPU plugin.
 
 ## Run locally
 
